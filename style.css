@@ -1,0 +1,67 @@
+/* style.css */
+body {
+    text-align: center;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.hidden {
+    display: none;
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+.text {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ff4d6d;
+    font-weight: bold;
+    word-wrap: break-word;
+    animation: fadeIn 1.5s ease-in-out;
+}
+audio {
+    margin-top: 15px;
+    animation: fadeIn 2s ease-in-out;
+    display: none;
+}
+button {
+    padding: 12px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    transition: background 0.3s;
+}
+button:hover {
+    background-color: #ff1493;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
